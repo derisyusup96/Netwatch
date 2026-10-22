@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "NetWatch Mon",
+    "slug": "mikhmon-native",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {"backgroundColor":"#0b1020"},
+    "android": {"package":"com.rtrwnet.mikhmonnative", "adaptiveIcon":{"backgroundColor":"#0b1020"}},
+    "ios": {"bundleIdentifier":"com.rtrwnet.mikhmonnative", "infoPlist":{"NSLocalNetworkUsageDescription":"NetWatch Mon connects directly to your MikroTik router on the local network."}}
+  }
+}
