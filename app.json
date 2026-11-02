@@ -3,10 +3,44 @@
     "name": "NetWatch Mon",
     "slug": "mikhmon-native",
     "version": "1.0.0",
+    "icon": "./public/icon-apps.png",
     "orientation": "portrait",
     "userInterfaceStyle": "dark",
-    "splash": {"backgroundColor":"#0b1020"},
-    "android": {"package":"com.rtrwnet.mikhmonnative", "adaptiveIcon":{"backgroundColor":"#0b1020"}},
-    "ios": {"bundleIdentifier":"com.rtrwnet.mikhmonnative", "infoPlist":{"NSLocalNetworkUsageDescription":"NetWatch Mon connects directly to your MikroTik router on the local network."}}
+    "splash": {
+      "backgroundColor": "#0b1020"
+    },
+    "android": {
+      "package": "com.rtrwnet.mikhmonnative",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./public/icon-apps.png",
+        "backgroundColor": "#0b1020"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.rtrwnet.mikhmonnative",
+      "infoPlist": {
+        "NSLocalNetworkUsageDescription": "NetWatch Mon connects directly to the configured MikroTik router."
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6739e8a9-72bd-489e-9e0f-ac093a440502"
+      }
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Izinkan akses foto untuk memilih logo voucher.",
+          "microphonePermission": false,
+          "cameraPermission": false
+        }
+      ]
+    ]
   }
 }
